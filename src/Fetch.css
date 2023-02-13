@@ -1,0 +1,76 @@
+.container{
+    max-width: 1220px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.card-items {
+    width: 400px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-items > h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+.fetch {
+    width: 250px;
+    height: 315px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 15px;
+    border: 2px solid rgb(149, 203, 156);
+    background-color: rgb(176, 234, 190);
+    position: relative;
+}
+
+.fetch:hover {
+    animation-name: pulse;
+    animation-duration: 1.6s;
+    animation-fill-mode: both;
+} 
+
+@keyframes pulse {
+    0% {transform: scale3d(1, 1, 1);}
+    50% {transform: scale3d(1.05, 1.05, 1.05);}
+    100% {transform: scale3d(1, 1, 1);}
+}
+
+
+
+.fetch > img {
+    width: 247px;
+    height: 150px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.fetch > h1  {
+    margin-bottom: 8px;
+}
+
+.del-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border-radius: 6px;
+    border: none;
+    background-color: rgb(233, 62, 62);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.del-btn:hover {
+    background-color: rgb(181, 7, 7);
+}
